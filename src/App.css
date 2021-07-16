@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #053794 0%, #82b9f8 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+img {
+  width: 70px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+header {
+  font-size: 2rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resetDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  padding: 5px 15px;
+  color: #d3313a;
+  background-color: white;
+}
+
+.reset:hover {
+  background-color: #d3313a;
+  color: white;
+}
+
+form {
+  flex-flow: column;
+}
+
+form input {
+  width: 70px;
+}
+
+form input,
+form button {
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+form button {
+  color: #d3313a;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+}
+
+form button:hover {
+  background: #d3313a;
+  color: white;
+}
+
+.inputLabel {
+  padding-bottom: 1rem;
+}
+
+.errorMessage {
+  color: rgb(192, 2, 2);
+  font-weight: bold;
+  height: 1rem;
+  padding-top: 1rem;
+}
+
+.framesTable {
+  margin: 0 auto;
+  width:80%;
+  font-size:18px;
+  text-align: center;
+  table-layout: fixed;
+  margin-bottom: 40px;
+  border: 2px solid black;
+}
+
+.framesTable {
+  padding: 0;
+  vertical-align: middle;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.frameHeaders {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Frame 1 Header */
+#scorecardTable tr:first-child th:first-child {
+  background-color:#ffffff; 
+  height:40px; color: #d3313a;
+  border-bottom: 2px solid black;
+}
+
+/* Frame Headers 2 through 10*/
+#scorecardTable tr:first-child th:not(:first-child){
+  background-color:#ffffff; 
+  height:40px; color: #d3313a;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.frameShots, .frameScores {
+  height:60px; 
+  background: rgb(255, 255, 255);
+}
+
+/* Frame Shot Cells for Frame 10 */
+#scorecardTable tr:nth-child(1) td:first-child {
+  border-left:0px solid;
+  border-bottom:2px solid;
+  color: black;
+}
+
+/* Frame Shot Cells for Frames 2 - 10 */
+#scorecardTable tr:nth-child(1) td:not(:first-child){
+  border-left:2px solid;
+  border-bottom:2px solid;
+  color: black;
+}
+
+/* Frame Total Cell for Frame 1 */
+#scorecardTable tr:nth-child(2) td:first-child {
+  border-left: 0px solid black;
+  color: black;
+}
+
+/* Frame Total Cell for Frames 2 - 10 */
+#scorecardTable tr:nth-child(2) td:not(:first-child){
+  border-left: 2px solid black;
+  color: black;
+}
+
+.highlight {
+  background-color: rgba(255, 255, 0, 0.459);
+}
+
